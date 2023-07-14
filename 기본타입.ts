@@ -37,3 +37,12 @@ function printSomething(): void {
 function neverEnd(): never {
   while (true) {}
 }
+
+// [✅ Enum Type]
+// Enmu 타입은 C, Java와 같은 다른 언어에서 흔하게 쓰이는 타입으로 특정 값들의 집합
+enum Avengers {
+  Capt,
+  IronMan,
+  Thor,
+}
+let hero: Avengers = Avengers.Capt;
